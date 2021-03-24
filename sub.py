@@ -64,7 +64,6 @@ def login(s: requests.Session, username, password):
 
 def get_daily(s: requests.Session):
     daily = s.get("https://app.ucas.ac.cn/ncov/api/default/daily?xgh=0&app_id=ucas")
-    # info = s.get("https://app.ucas.ac.cn/ncov/api/default/index?xgh=0&app_id=ucas")
     j = daily.json()
     d = j.get('d', None)
     if d:
