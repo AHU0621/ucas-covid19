@@ -84,16 +84,11 @@ def submit(s: requests.Session, old: dict):
         'sfzx': old['sfzx'],
         'szdd': old['szdd'],
         'ismoved': 0,  # 如果前一天位置变化这个值会为1，第二天仍然获取到昨天的1，而事实上位置是没变化的，所以置0
-        # 'ismoved': old['ismoved'],
         'tw': old['tw'],
         'bztcyy': old['bztcyy'],
-        # 'sftjwh': old['sfsfbh'],  # 2020.9.16 del
-        # 'sftjhb': old['sftjhb'],  # 2020.9.16 del
         'sfcxtz': old['sfcxtz'],
         'sfyyjc': old['sfyyjc'],
         'jcjgqr': old['jcjgqr'],
-        # 'sfjcwhry': old['sfjcwhry'],  # 2020.9.16 del
-        # 'sfjchbry': old['sfjchbry'],  # 2020.9.16 del
         'sfjcbh': old['sfjcbh'],
         'jcbhlx': old['jcbhlx'],
         'sfcyglq': old['sfcyglq'],
